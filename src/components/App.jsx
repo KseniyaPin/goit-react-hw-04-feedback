@@ -36,8 +36,8 @@ export default function App() {
   };
 
   useEffect(() => {
-    setTotal(total + 1);
-    // setTotal(state => state + 1);
+    // setTotal(total + 1);
+    setTotal(state => state + 1);
     setPositiveFeedback(((good / total) * 100).toFixed(0));
 
   }, [good, neutral, bad]);
